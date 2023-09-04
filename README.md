@@ -924,7 +924,6 @@ It gives a report of what cells are used and the number of input and output sign
 + `read_verilog mult_8.v`
 + `synth -top mult8`
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/13359e0d-0676-4313-b791-3992655ee4f7">
 
 + `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `show`
