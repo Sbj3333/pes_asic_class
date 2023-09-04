@@ -339,42 +339,41 @@ Little-Endian: In little-endian format, the least significant byte (LSB) is stor
 
 Big-Endian: Conversely, big-endian format places the most significant byte (MSB) at the lowest memory address, while the least significant byte (LSB) is located at the highest memory address.
 
-## Load, Add, and Store Instructions
+## Load, Add and Store Instructions
+Load, Add, and Store instructions are fundamental operations in computer architecture and assembly programming. They are often used to manipulate data within a computer's memory and registers.
+1. **Load Instructions:**
+Load instructions are used to transfer data from memory to registers. They allow you to fetch data from a specified memory address and place it into a register for further processing.
 
-Fundamental operations within computer architecture and assembly programming encompass Load, Add, and Store instructions, serving to manipulate data in memory and registers.
+Example `ld x6, 8(x5)`
 
-Illustrative Example: ``` ld x8, 16(x23) ```
-In this instance:
+In this Example
+- `ld` is the load double-word instruction.
+- `x6` is the destination register.
+- `8(x5)` is the memory address pointed to by register `x5` (base address + offset).
+2. **Store Instructions:**
+Store instructions are used to write data from registers into memory.They store values from registers into memory addresses
 
-* ``` ld ``` signifies the load double-word instruction.
-* ``` x8 ``` denotes the destination register.
-* ``` 16(x23) ``` designates the memory address indicated by register x23 (base address + offset).
+Example `sd x8, 8(x9)`
 
-![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/0a0f62ff-ba51-4eb3-b120-acdfd3b83df6)
+In this Example
+- `sd` is the store double-word instruction.
+- `x8` is the source register.
+- `8(x9)` is the memory address pointed to by register `x9` (base address + offset).
+3. Add Instructions:
+  Add instructions are used to perform addition operations on registers. They add the values of two source registers and store the result in a destination register.
 
+Example `add x9, x10, x11`
 
-Illustrative Example: ``` add x8, x24, x8 ```
+In this Example
+- `add` is the add instruction.
+- `x9` is the destination register.
+- `x10` and `x11` are the source registers.
+## 32-Registers and their ABI Names
+The choice of the number of registers in a processor's architecture, such as the RISC-V RV64 architecture with its 32 general-purpose registers, involves a trade-off between various factors. While modern processors can have more registers but increasing the number of registers could lead to larger instructions, which would take up more memory and potentially slow down instruction fetch and decode.
+#### ABI Names
+ABI names for registers serve as a standardized way to designate the purpose and usage of specific registers within a software ecosystem. These names play a critical role in maintaining compatibility, optimizing code generation, and facilitating communication between different software components. 
 
-![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/68adadc4-e2e7-4fb7-91e3-7e6a335507f4)
-
-
-Here:
-
-``` add ``` signifies the add instruction.
-``` x8 ``` represents the destination register.
-``` x24 ``` and ``` x8 ``` are source registers.
-
-
-## 32 Registers and Associated ABI Names
-
-The decision regarding the quantity of registers within a processor's architecture, such as the RISC-V RV64 configuration with its 32 general-purpose registers, involves a compromise between several factors. While contemporary processors might feature more registers, augmenting their number could result in larger instructions, consuming additional memory and potentially impeding instruction fetch and decoding.
-
-**ABI Names** 
-
-![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/448d14d5-b001-47e4-933a-f1ce59191ecc)
-
-
-ABI names for registers furnish a standardized method to indicate the purpose and application of specific registers within a software ecosystem. These designations are pivotal in preserving compatibility, optimizing code generation, and facilitating communication among diverse software components.
+<img width="430" alt="other6" src="https://github.com/S-Vighnesh/PES_ASIC_233/assets/137196908/59096a97-f077-4dc0-a896-1c3ecb3202d8">
 
 
 ## Engagement in LabWork via ABI Function Calls
