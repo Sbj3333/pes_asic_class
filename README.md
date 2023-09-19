@@ -373,7 +373,8 @@ The choice of the number of registers in a processor's architecture, such as the
 #### ABI Names
 ABI names for registers serve as a standardized way to designate the purpose and usage of specific registers within a software ecosystem. These names play a critical role in maintaining compatibility, optimizing code generation, and facilitating communication between different software components. 
 
-<img width="430" alt="other6" src="https://github.com/S-Vighnesh/PES_ASIC_233/assets/137196908/59096a97-f077-4dc0-a896-1c3ecb3202d8">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/f9f33dea-c8eb-47b5-aca2-3ba8be0dc526)
+
 
 
 ## Engagement in LabWork via ABI Function Calls
@@ -438,7 +439,8 @@ ret;
   -  Both the design and the testbench are fed to the simulator and it produces a vcd (value change dump) file.
   -  In order to view the vcd file, we use the GTKwave where we can see the wave forms.
     
-   <img width="526" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/37b643b5-e41e-425d-85f0-a55d7e190571">
+   ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/f7599d98-700e-45de-b81d-fb29f5e73228)
+
 
 - **Design**
   - It is the actual verilog code or set of verilog codes which ahs the intended functionality to meet with the required specifications.
@@ -448,7 +450,8 @@ ret;
   - A testbench is a specialized Verilog module or program used to verify the functionality and behavior of another Verilog module, circuit, or design. Testbenches are essential for testing and simulating digital designs before they are synthesized or manufactured as physical chips.
   - It is a setup to apply stimulus to the design to check its functionality.
 
-    <img width="526" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/72e6ffe4-abba-41f1-b79f-240f125b410b">
+   ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/d20c1ca7-5f0b-4f9f-ad52-2105852f050b)
+
 
 </details>
 
@@ -530,7 +533,8 @@ ret;
   - It is an open-source framework for Verilog RTL synthesis and formal verification.
   - Yosys provides a collection of tools and algorithms that enable designers to transform high-level RTL (Register Transfer Level) descriptions of digital circuits into optimized gate-level representations suitable for physical implementation on hardware.
 
- <img width="561" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/5f879aaa-ec65-4362-9f91-f39999069732">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/7e0da99d-f2e5-40e0-8506-d4e2f348ba39)
+
 
    - Design and .lib files are fed to the synthesizer to get a netlist file.
    - **Netlist** is the representation of the design in the form of standard cells in the .lib
@@ -542,7 +546,8 @@ ret;
  
 + To verify the synthesis
 
-<img width="566" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/fd73f6b8-f594-4e4f-bb1a-b600fb4475f8">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/95c48d2c-77b2-4afe-8d65-42442273a0b9)
+
 
    - Netlist along with the tesbench is fed to the iverilog simulator.
    - The vcd file generated is fed to the gtkwave simulator.
@@ -566,14 +571,16 @@ ret;
   - In order to make a circuit faster, the clock frequency should be high.
   - For that, the time period of the clock should be as low as possible.
   
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/bc2242db-49e8-4c19-a06e-8f8e82f55729">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/a83a47a8-f7ab-4593-bf22-f89207f61fe3)
+
 
 + In a sequential circuit, clock period depends on:
   - Clock to Q of flip-flop A.
   - Propagation delay of combinational circuit.
   - Setup time of flip-flop B.
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/112de4cd-6e0c-46ec-ad94-0cb6540af7e1">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/b76e10fb-0e15-4fdc-a793-d9c08f27306a)
+
 
 + **Why need fast and slow cells?**
   - To ensure that there are no HOLD issues at flip-flop B, we require slow cells.
@@ -683,8 +690,10 @@ It gives a report of what cells are used and the number of input and output sign
     - 1v80 : indicates the variations due to the voltage levels where the silicon will be incorporated.
 + It also displays the units of various parameters.
 
-  <img width="284" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/d01d750e-fc1c-4de0-8e72-e6842c14f90b">
-  <img width="229" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/39f26ac7-7302-4dc7-a517-6a5a031e2cae">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/60d239f0-d80c-42f7-b4aa-29a8f0304620)
+
+ ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/568e84ca-e7cc-499b-8e26-ee9e90ef3ef3)
+
 
 + It gives the features of the cells
 + To enable line number `:se nu`
@@ -693,7 +702,7 @@ It gives a report of what cells are used and the number of input and output sign
 + Since there are 5 inputs, for all the 32 possible combinations, it gives the delay, power and all the other parameters for each cell.
 + The below image shows the power consumption and area comparision.
   
-<img width="911" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/2a6b20a3-33d1-47e0-814f-6cff100ec2a7">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/b11b52da-d95c-4413-97bb-e696e9cc0710)
 
 </details>
 
@@ -709,7 +718,8 @@ It gives a report of what cells are used and the number of input and output sign
   - `cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files`
   -  `gvim multiple_modules.v`
 
-<img width="321" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/384b4475-a6e7-4905-9a70-cfdff657e6db">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/79ce7003-698b-4803-9a21-3d91d534ccce)
+
 
 +  `multiple_modules` instantiates `sub_module1` and `sub_module2`
 
@@ -727,15 +737,18 @@ It gives a report of what cells are used and the number of input and output sign
 +  `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + To view the netlist `show multiple_modules`
 
-  <img width="304" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/721a0563-1fbe-4ce7-975c-0ef8d50e7fe6">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/43247214-7778-435d-9c5c-78a1374fe0d0)
+
 
 - Here it shows `sub_module1` and `sub_module2` instead of AND gate and OR gate.
 
 + `write_verilog -noattr multiple_modules_hier.v`
 + `!gvim multiple_modules_hier.v`
 
-<img width="371" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/fcc68430-e284-4b54-80af-dfbcfbade0ea">
- <img width="300" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/4e8ffd10-6efb-4d2d-878e-221d685502c1">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/48df9c00-080d-47c6-b2c5-3215d9413878)
+
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/0340ad87-fa56-4239-8e7d-4c67e1bc1d69)
+
 
  **Flattened Synthesis**
   Flattened synthesis is the opposite of hierarchical synthesis. Instead of maintaining the hierarchical structure of the design during synthesis, flattened synthesis combines all modules and sub-modules into a single, flat representation. This means that the entire design is synthesized as a single unit, without preserving the modular organization present in the original high-level description.
@@ -748,13 +761,16 @@ It gives a report of what cells are used and the number of input and output sign
 + `flatten` to write out a flattened netlist
 + `show`
 
-<img width="924" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/bd069e1f-4da5-473a-b041-562cbef042f0">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/fc4529db-416a-4c2b-843b-91689861d8b5)
+
 
 + `write_verilog -noattr multiple_modules_flat.v`
 + `!gvim multiple_modules_flat.v`
   
-<img width="365" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/18760a81-9f03-4b11-9b8f-dd4758a25ab7">
-<img width="300" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/e3a80209-7339-4cef-833c-2c3bb1fc4dec">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/deb76def-5f31-46fe-8be4-3fbf369e1f8f)
+
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/50e14258-2aa4-4b0e-a88c-dacfc8bea3cb)
+
 
 
 </details>
@@ -781,7 +797,7 @@ It gives a report of what cells are used and the number of input and output sign
 
  `gvim dff_asyncres_syncres.v`
  
-<img width="445" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/582609c7-faf6-4981-9643-ec5ad543b65f">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/d7922ffd-ddf7-4f14-b346-4770cf2e8422)
 
 **D Flip_Flop with Asynchronous Set**
 + When the set is high, the output of the flip-flop is forced to 1, irrespective of the clock signal.
@@ -789,7 +805,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 `gvim dff_async_set.v`
 
-<img width="357" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/f45ca71f-8eef-402a-a966-9035a51fa21d">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/461ad388-4247-46b9-bdfe-a9c967725f84)
+
 
 **D Flip-Flop with Synchronous Reset**
 + When the reset is high on the positive edge of the clock, the output of the flip-flop is forced to 0.
@@ -797,7 +814,8 @@ It gives a report of what cells are used and the number of input and output sign
 
   `gvim dff_syncres.v`
 
-<img width="409" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/d22a7aa2-059f-48bd-b0c4-32a294248c8b">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/54f21dcc-8411-42bc-9324-e36e3a8a33cf)
+
 
 **D Flip-Flop with Asynchronous Reset and Synchronous Reset**
 + When the asynchronous resest is high, the output is forced to 0.
@@ -807,7 +825,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 `gvim dff_asyncres_syncres.v`
 
-<img width="439" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/8ee2f2a5-31e9-447c-a23f-b347fc7b642c">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/b3163c04-d72e-45c4-8116-bd3a05e903f0)
+
 
 </details>
 
@@ -837,7 +856,8 @@ It gives a report of what cells are used and the number of input and output sign
   - `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
   - `show`
 
-    <img width="925" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/92f225cf-a014-4a89-be7a-a9560a6d6359">
+   ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/e552cdb7-0ad5-4d4d-b069-d89e9c7ba74f)
+
 
  **D Flip_Flop with Asynchronous Set**
  + **Simulation**
@@ -861,7 +881,8 @@ It gives a report of what cells are used and the number of input and output sign
   - `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
   - `show` 
 
-<img width="922" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/87e93a5e-c904-4eca-b3a7-4657c8f8f0cc">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/80a023c2-c23a-4ba5-b215-920e9a6c4580)
+
 
 **D Flip-Flop with Synchronous Reset**
 + **Simulation**
@@ -887,7 +908,8 @@ It gives a report of what cells are used and the number of input and output sign
   - `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
   - `show`
 
-<img width="925" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/ff5b11e7-11a8-40c9-9e08-e090eeb0f547">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/da8ad36d-49c7-487a-a44d-78432a0c4c8e)
+
 
 </details>
 
@@ -909,16 +931,19 @@ It gives a report of what cells are used and the number of input and output sign
 + `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `show`
 
- <img width="305" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/fb4d176c-0d06-43e3-bad9-7945e02c2889">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/801d88cf-698c-44fa-9af2-dcfaf9224212)
+
 
 + `write_verilog -noattr mul2_netlist.v`
 + `!gvim mul2_netlist.v`
   
- <img width="436" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/9a0eca57-0656-4cb3-99f0-ad7a0d0f356e">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/23ee7370-832c-4911-9af7-27f4f3c827ab)
+
 
 + `gvim mult_8.v`
 
-  <img width="443" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/3f9fa46f-56b9-43bf-8d46-325d75f76a95">
+ ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/2b09ea34-0a2a-4c42-b0d0-e5e7e32ce63b)
+
 
 + `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib  `
 + `read_verilog mult_8.v`
@@ -928,12 +953,14 @@ It gives a report of what cells are used and the number of input and output sign
 + `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `show`
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/4c8b811f-b793-45fa-a8e7-a65663ef3f74">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/844445a1-942c-4805-80de-ab56ec2b0999)
+
 
 + `write_verilog -noattr mult8_netlist.v`
 + `!gvim mult8_netlist.v`
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/37c89aea-497d-4e0d-99c5-c46dffd63b7d">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/851cec23-433e-4d92-bb27-65495d4aba1a)
+
 
 </details>
 
@@ -972,7 +999,8 @@ It gives a report of what cells are used and the number of input and output sign
 	
 + `gvim opt_check.v`
 
-  <img width="500" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/dad0961e-10d4-4a0c-9991-0ad6daea169f">
+ ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/b16a37ba-fc4b-4073-b67a-4e5aca8dd064)
+
 
 + `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `read_verilog opt_check.v`
@@ -984,7 +1012,8 @@ It gives a report of what cells are used and the number of input and output sign
   ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/5688e5bd-4052-44fd-b455-18d34af20a35)
 
 
-  <img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/8861528b-55be-45e4-952e-c0600c811685">
+  ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/d6792821-3f28-478c-a34a-707eacd81ab4)
+
 
 </details>
 
@@ -993,7 +1022,9 @@ It gives a report of what cells are used and the number of input and output sign
 	
 + `gvim opt_check2.v`
 
-  <img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/d957a7b5-fb8a-4e59-a9d3-cb1730a7dd25">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/4c018284-c61a-47a5-be5a-d978e9ae2245)
+
+
   
 + `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `read_verilog opt_check2.v`
@@ -1005,7 +1036,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/5633e581-f87c-489b-bf65-2249d4aa9914)
 
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/d0b4fb18-71ff-4aa6-92b9-49eac8dd889b">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/ea0b3065-2f5d-4517-989f-3d49928fc871)
+
 
 </details>
 
@@ -1014,7 +1046,8 @@ It gives a report of what cells are used and the number of input and output sign
 	
 + `gvim opt_check3.v`
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/3183db65-f77d-443a-9814-dc776c3c0990">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/87f49978-aa5e-424e-b02c-84fc5da02589)
+
 
 + `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `read_verilog opt_check3.v`
@@ -1027,7 +1060,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/2c885b4d-c274-4bae-abd0-15853f864f62">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/75fb4c30-8f36-4f37-ac59-5597c36b5b39)
+
 
 </details>
 
@@ -1036,7 +1070,8 @@ It gives a report of what cells are used and the number of input and output sign
 	
 + `gvim opt_check4.v`
 
- <img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/75c65195-8f6b-416e-8074-306a46263746">
+ ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/a79aac75-825b-426b-b517-189646fc4e09)
+
 
 + `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `read_verilog opt_check4.v`
@@ -1047,8 +1082,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/9c6cc498-6379-48d0-82f3-4d6571e44b64)
 
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/2e2374a2-a0b8-4b5c-ac78-f487a76d1f12)
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/498cf442-ec8e-468e-a310-d1f93b93ce1a">
 
 </details>
 
@@ -1057,7 +1092,8 @@ It gives a report of what cells are used and the number of input and output sign
 	
 + `gvim multiple_module_opt.v`
 
- <img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/ad570bd8-44b5-4408-8715-02f1c5d15a29">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/bcc098e7-4272-4dfe-bb0f-e5e77be90ad2)
+
 
 + `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `read_verilog multiple_module_opt.v`
@@ -1069,7 +1105,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/802db17c-5053-4b60-a81f-c64166758f79)
 
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/1344d22d-51f5-439e-bc34-96b2a742474e">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/c61c47e3-e8b0-4100-aa0d-140d0ae3620a)
+
 
 </details>
 
@@ -1080,7 +1117,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 + `gvim dff_const1.v`
 
-<img width="331" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/abec2938-5f2c-4cd5-b369-103c1b09f098">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/22d6c2a4-fe31-41a7-9a67-2f8c9791c6ac)
+
 
 **Simulation**
 
@@ -1088,7 +1126,8 @@ It gives a report of what cells are used and the number of input and output sign
 + `/a.out`
 + `gtkwave tb_dff_const1.vcd`
 
-<img width="503" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/51301173-fdbd-476c-842e-2d08078f020d">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/1191fb7f-b9f7-4d94-9274-20df9f3e032c)
+
 
 **Synthesis**
 
@@ -1102,7 +1141,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/9154b2ec-c51d-4e04-a2d7-355a523f5b92)
 
 
-<img width="925" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/fa1d8b2f-431e-4836-8a75-8c2bd3ce326e">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/12b78f65-3426-465a-8e9c-f3904914d92c)
+
 
 </details>
 
@@ -1111,7 +1151,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 + `gvim dff_const2.v`
 
-<img width="355" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/e0e6e4da-0429-49db-b687-d99ab365ed17">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/f0c809bf-ccf6-4294-9dc5-0c7972d8cdfc)
+
 
 **Simulation**
 
@@ -1120,7 +1161,8 @@ It gives a report of what cells are used and the number of input and output sign
 + `gtkwave tb_dff_const2.vcd`
 
 
- <img width="500" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/a90d628f-dd7d-4ae6-8b4d-072b6a9960b9">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/c7c13976-f3ea-47f4-9460-67cb74c76e0d)
+
 
  **Synthesis**
  
@@ -1134,7 +1176,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/c1274655-135f-4f21-bf09-4c97eabbd633)
 
 
-<img width="305" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/8e3503dd-d315-426f-9a3e-bd487014600a">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/a10d4c1a-730f-463c-8eba-ce94edc188b8)
+
 
 </details>
 
@@ -1143,7 +1186,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 + `gvim dff_const3.v`
 
- <img width="272" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/3ce28559-0063-4ef1-9d7e-a3af839dd7e3">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/ef04ef10-f412-408e-abb8-abb721a6e72c)
+
 
 **Simulation**
 
@@ -1152,7 +1196,8 @@ It gives a report of what cells are used and the number of input and output sign
 + `gtkwave tb_dff_const3.vcd`
 
 
-<img width="502" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/aed6c933-5c06-4687-ba9e-9c782626c030">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/99c5a1ec-2d88-4d2f-a82e-2cdceb319e54)
+
 
 **Synthesis**
 
@@ -1166,7 +1211,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/f83cf488-ea2a-4629-bbda-705a34a8a3d3)
 
 
-<img width="922" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/bdea6f33-d357-47f4-a9fd-cc655dcce869">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/1acb3afe-05b6-4c92-b9d3-01359f2e0790)
+
 
 </details>
 
@@ -1175,7 +1221,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 + `gvim dff_const4.v`
 
-<img width="311" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/bc5661c4-50c6-4ccf-8aab-a5ace3ccfa14">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/8e93b881-1a72-4c25-a212-7bda3e7f51f8)
+
 
 **Simulation**
 
@@ -1184,7 +1231,8 @@ It gives a report of what cells are used and the number of input and output sign
 + `gtkwave tb_dff_const4.vcd`
 
 
-<img width="500" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/1a9ee230-2ad6-4c92-8e37-0a753832180f">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/17b5c3f5-211c-4b86-94ef-6dee7e16687c)
+
 
 **Synthesis**
 
@@ -1198,7 +1246,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/2897d527-67ff-4f86-aba1-a54bb9cba9a6)
 
 
-<img width="306" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/4d4d33fc-11ec-4cb5-867d-2f34d892255a">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/d24d844c-19d9-4ebe-a5b5-6c9fd13678e6)
+
 
 </details>
 
@@ -1207,7 +1256,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 + `gvim dff_const5.v`
 
-<img width="251" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/af7acfca-6fb0-4b62-bb1e-d32746d0c07e">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/1363cee2-9efa-4ea4-b97c-bfb138388762)
+
 
 **Simulation**
 
@@ -1216,7 +1266,7 @@ It gives a report of what cells are used and the number of input and output sign
 + `gtkwave tb_dff_const4.vcd`
 
 
-<img width="500" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/7eb3b371-189e-483c-80d9-37d38c062cd2">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/221a7a68-1442-4a55-be38-71138d0bf54b)
 
 **Synthesis**
 
@@ -1230,7 +1280,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/6d1cab1e-67db-4362-9079-3f0ad9d42644)
 
 
-<img width="923" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/8d95c49d-9fd9-4d76-bba1-b893c6f163fc">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/c3cdb3fa-c51f-415f-a2ca-5dbde61240da)
+
 
 </details>
 
@@ -1240,7 +1291,8 @@ It gives a report of what cells are used and the number of input and output sign
 
  + `gvim counter_opt.v`
 
-<img width="349" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/cb5798fa-2ee9-4cf0-9372-3da9ff17bd66">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/1214cce2-762e-4469-975b-43dfb966c605)
+
 
 + `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `read_verilog counter_opt.v`
@@ -1252,7 +1304,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/418e679f-2573-4718-b6f4-cbd6e2312971)
 
 
-<img width="923" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/b65d5ac8-3961-4a7b-9e8a-18bc0229f104">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/5c33cdd5-d2fc-4e04-9976-945d9c12d547)
+
 
 </details>
 
@@ -1261,7 +1314,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 + `gvim counter_opt2.v`
 
- <img width="347" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/b6262d9a-5892-4360-91fa-18f7e2aa39e7">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/daa8d69f-50a6-40d3-aa92-ed78e5406952)
+
 
 + `read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 + `read_verilog counter_opt2.v`
@@ -1288,7 +1342,8 @@ It gives a report of what cells are used and the number of input and output sign
    - This type of simulation is typically performed after the logic synthesis process, where a high-level description of the design is transformed into a netlist of gates and flip-flops.
    - We perform this to verify logical correctness of the design after synthesizing it. Also ensuring the timing of the design is met.
   
-<img width="608" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/6298b067-2f45-4dbc-ad25-762ac3d8be63">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/77af3fa2-a84b-4b43-83a6-e3758096ac6f)
+
 
 + **Synthesis-Simulation Mismatch**
   - A synthesis-simulation mismatch refers to a situation in digital design where the behavior of a circuit, as observed during simulation, doesn't match the expected or desired behavior of the circuit after it has been synthesized.
@@ -1349,7 +1404,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 + `gvim teranry_operator_mux.v`
 
-<img width="370" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/8539ab94-8f5a-4bff-8465-eb8bb6ca83b8">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/e137e294-7d91-47c8-b730-169c56994777)
+
 
 **Simulation**
 
@@ -1362,7 +1418,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 
 
-<img width="500" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/c675c505-880e-4c15-b079-3c528032c279">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/f01e45cf-dcd3-4dec-b091-7444d96518dc)
+
 
 **Synthesis**
 
@@ -1374,8 +1431,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/85deb95b-94b4-4166-a91e-cce8c4fcb029)
 
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/9a7607fb-5660-4155-96a6-51fc3e0b59d5)
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/9a4f4ebd-370f-45b5-a1c1-cd95b8e1e556">
 
 **GLS to Gate-Level Simulation**
 
@@ -1387,7 +1444,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 
 
-<img width="498" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/5c4652e6-8364-4e81-9cd3-f1795f5d321a">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/2d41c120-f8fd-4f4b-9937-56e9e23f21f9)
+
 
 </details>
 
@@ -1396,7 +1454,8 @@ It gives a report of what cells are used and the number of input and output sign
 
  + `gvim bad_mux.v`
 
- <img width="290" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/deb388a2-8463-410b-b16e-5eaf81697d69">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/469e27d3-a4c9-4504-acb7-bb63543f3e74)
+
 
 **Simualtion**
 
@@ -1406,7 +1465,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 
 
-<img width="500" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/46266c26-99ce-4a79-9e5c-9558ea15f407">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/47e7d3ce-0c8b-4d57-a554-f7e47019f03c)
+
 
 **Synthesis**
 
@@ -1419,7 +1479,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/b0f76875-c59e-4bd9-a0f3-0d90b5c8f49f)
 
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/d15147f9-775d-44bb-93a5-d7249645d9bc">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/21a62a51-bfd2-4425-920f-e4cc04097e84)
+
 
 **GLS to Gate-Level Simulation**
 
@@ -1429,7 +1490,8 @@ It gives a report of what cells are used and the number of input and output sign
 
 
   
-<img width="501" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/9d51d787-22d3-4495-95cc-c87c0ef71d17">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/2006c60b-ca14-4248-883d-5bb12f71b177)
+
 
 </details>
 
@@ -1440,7 +1502,7 @@ It gives a report of what cells are used and the number of input and output sign
 
 + `gvim blocking_caveat.v`
 
-<img width="327" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/5827ea02-ec07-4164-9b9f-b064750ede9d">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/ec8a10bb-c5bf-4648-be33-2bef8b2d01ec)
 
 **Simualtion**
 
@@ -1449,7 +1511,8 @@ It gives a report of what cells are used and the number of input and output sign
 + `gtkwave tb_blocking_caveat.vcd`
 
 
-<img width="501" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/c3b18d2e-d407-45c4-9e97-ec59042ec2bd">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/b98d0c11-00c7-4d90-a134-2904de0771b4)
+
 
 **Synthesis**
 
@@ -1462,7 +1525,8 @@ It gives a report of what cells are used and the number of input and output sign
 ![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/c6cdebf5-629b-4151-a68e-f36399ee73f4)
 
 
-<img width="400" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/d660d89b-8a9a-43d3-9e78-ab1f7054a667">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/e0c2c2e9-6c3e-45ea-8c66-b15d8f3db2e7)
+
 
 **GLS to Gate-Level Simulation**
 
@@ -1471,6 +1535,7 @@ It gives a report of what cells are used and the number of input and output sign
 + `gtkwave tb_blocking_caveat.vcd`
 
 
-<img width="503" alt="image" src="https://github.com/Veda1809/pes_asic_class/assets/142098395/c78704db-de4c-4958-880f-0747f78090d9">
+![image](https://github.com/Sbj3333/pes_asic_class/assets/95922889/07cdc90a-a53d-4091-a8c8-02b4d98cfb84)
+
 
 </details>
